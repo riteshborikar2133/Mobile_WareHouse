@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 12px;
+  /* background-color:#ffffff; */
+  background:url(./Components/Warehouse.jpg);
+  background-size: cover;
+}
+.table{
+  /* border: 1px solid black; */
+  font-size: 1rem;
+  /* display: flex;
+  justify-content: center; */
+}
+.table table{
+  /* margin: 20rem auto; */
+  border: 1px solid black;
+  padding: 0;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: aliceblue;
+}
+.table table tr th{
+  margin: 0;
+  border: 1px solid black;
+  padding: 0.5rem 1rem ;
+}
+.table table tr td{
+  margin: 0;
+  padding: 0.51rem;
+}
+.table table tr td ul{
+  padding: 1.2rem;
+  text-align: left;
+}
+.table table tr td ul li{
+  padding: 0.31rem 0.5rem;
+}
+.delbtn{
+  background-color: red;
+  padding: 0.2rem 0.4rem;
+  color: aliceblue;
+  border-radius: 0.2rem;
+  font-family:'Courier New', Courier, monospace;
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.stockin{
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.homebtn{
+  font-size: 1.3rem;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  /* background-color: yellow; */
+}
+.homebtn h3{
+  background-color: yellowgreen;
+  padding: 0.2rem 0.4rem;
+  color: aliceblue;
+  border-radius: 0.2rem;
+  font-family:'Courier New', Courier, monospace;
+  margin: 0 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}

@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+.card{
+  width: 20rem;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #e2f0f9;
+  box-shadow: 3px 3px 10px black;
+}
+.card img{
+  height: 5rem;
+  margin: 1.2rem 0;
+  object-fit: cover;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
