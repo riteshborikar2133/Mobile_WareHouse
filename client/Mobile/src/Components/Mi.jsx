@@ -6,7 +6,7 @@ export default function Mi(props) {
     const [data, setData] = useState([])
     const getdata = async () => {
         try {
-            const res = await axios.get('http://localhost:8877/getdata')
+            const res = await axios.get('https://mobilewarehousebackend.onrender.com//getdata')
             if (res) {
                 // console.log(res.data)
                 setData(res.data)
