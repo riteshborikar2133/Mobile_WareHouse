@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background-image: url('./Warehouse.jpg');
+    backdrop-filter: blur(20px) solid black;
+}
+
+.container {
+    backdrop-filter: blur(20px) saturate(150%) ;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(12, 15, 22, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 38px;
+    filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    width:15rem;
+    
+}
+
+.container form .title {
+    font-family: 'Righteous', sans-serif;;
+    color: rgb(157, 193, 225);
+    font-size: 30px;
+    font-weight:1000;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.container form .input-box {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+
+}
+
+.container form .input-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    /* background-color: rgba(12, 15, 22, 0.25); */
+    background: transparent;
+    border-radius: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);  
+}
+
+
+
+.container form .button {
+    margin: 40px 0 20px 0;
+}
+
+.container .input-box input[type="submit"] {
+
+    font-size: 17px;
+    background: transparent;
+    color: rgb(0 255 234);
+    border: 3px solid rgb(55 197 185 / 85%);
+    transition: all .3s ease;
+    border-radius: 25px;
+}
+
+.container .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    transform: scale(1.125);
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease;
+    background-color: #000000;
+
+}
+
