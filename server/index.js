@@ -63,6 +63,28 @@ app.put('/putdata', async (req, res) => {
     }
 })
 
+app.post('/postuser',async(req,res)=>{
+    d = req.body 
+    try{
+        console.log(d)
+        // res.send('gotit')
+        // const s = await user(d)
+        // const a =s.save()
+        // res.send({a, message:"successful"})
+
+    }catch(err){
+        console.log(err)
+    }
+})
+
+app.get('/user',async(req,res)=>{
+    try{
+        const a = await user.find()
+        res.send(a)
+    }catch(err){
+        console.log(err)
+    }
+})
 
 app.post('/user', async (req, res) => {
     d = req.body

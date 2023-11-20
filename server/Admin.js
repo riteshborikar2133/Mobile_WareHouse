@@ -9,8 +9,11 @@ mongoose.connect(atlas, {
     .catch((err) => { console.log(err) })
 
 const User = mongoose.Schema({
+    Name:String,
+    Age:String,
+    Role:String,
     username:String,
-    password:String
+    password:String,
 })
 
 const user = mongoose.model("admin",User)

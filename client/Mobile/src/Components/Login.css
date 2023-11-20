@@ -88,4 +88,17 @@ body {
     background-color: #000000;
 
 }
+.container .reg-box{
+    font-size: 17px;
+    background: transparent;
+    padding: 0.71rem;
+    color: rgb(0 255 234);
+    border: 3px solid rgb(55 197 185 / 85%);
+    transition: all .3s ease;
+    border-radius: 25px;
+}
+.container .reg-box:hover{
+    background: #000000;
+    
+}
 

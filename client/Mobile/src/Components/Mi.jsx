@@ -33,7 +33,7 @@ export default function Mi(props) {
             let data = {
                 _id: id, Avl: (a - stock)
             }
-            const res = await axios.put("http://localhost:8877/putdata", data)
+            const res = await axios.put("https://mobilewarehousebackend.onrender.com/putdata", data)
             if (res) {
                 console.log(res)
             }
@@ -43,7 +43,7 @@ export default function Mi(props) {
         let data = {
             _id: id, Avl: (parseInt(stock)), Total: (parseInt(stock))
         }
-        const res = await axios.put("http://localhost:8877/putdata", data)
+        const res = await axios.put("https://mobilewarehousebackend.onrender.com/putdata", data)
         if (res) {
             console.log(res)
         }

@@ -4,6 +4,7 @@ import Card from './Components/Card'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Mi from './Components/Mi'
 import Login from './Components/Login'
+import Reg from './Components/Reg';
 function App() {
   const [count, setCount] = useState(0)
   const getdata = ()=>{
@@ -22,6 +23,7 @@ function App() {
           <Route path='/card' element={
           user?<Card />:<Login />
           } />
+          <Route path='/reg' element={<Reg/>}/>
           <Route path='/Mi' element={<Mi name='Mi' />} />
           <Route path='/Realme' element={<Mi name='Realme' />} />
           <Route path='/Iphone' element={<Mi name='Iphone' />} />

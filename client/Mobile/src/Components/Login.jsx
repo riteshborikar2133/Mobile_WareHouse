@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import './Login.css'
 import axios from 'axios'
 // import './card.css'
@@ -54,6 +54,9 @@ export default function Login(props) {
                         </div>
                         <div className="input-box button">
                             <input type="submit" name="" value="Submit" />
+                        </div>
+                        <div className="reg-box button">
+                            <NavLink to='/reg' style={{color:'white',textDecoration:'none'}}>Register</NavLink>
                         </div>
                     </form>
                 </div>
